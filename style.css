@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+  box-sizing: border-box;
+  height: 100%
+}
+
+body {
+  margin-top: 0px;
+  height: 100vh;
+  background-image: url(cherry-blossom1.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  background-color: #fff7;
+  box-shadow: 0 3px 30px #111111;
+  width: 290px;
+  height: 510px;
+  padding: 30px 40px;
+}
+
+.screen {
+  background: rgba(270, 270, 270, 70%);
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  text-align: right;
+  font-size: 40px;
+  width: 250px;
+  outline: none;
+}
+
+input::placeholder {
+  color: #424242;
+}
+
+.calc-button-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px;
+  margin-bottom: -10px;
+}
+
+.calc-button {
+    border-radius: 50%;
+    border: 1px solid #eb345e;
+    width: 65px;
+    height: 65px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.calc-button:last-child {
+  color: white;
+  background: #fdc3c0;
+  font-size: 27px;
+}
+
+
+.zero-button {
+  border-radius: 50px;
+  flex-basis: 50%;
+
+}
+
+.calc-button:hover {
+  background: #eb345e;
+  color: white;
+  transition: all 150ms ease-in-out;
+}
+
+.calc-button:active {
+  background: #d5878d;
+}
